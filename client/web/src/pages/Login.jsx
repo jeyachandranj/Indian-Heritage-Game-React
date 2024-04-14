@@ -39,17 +39,18 @@ export default function Login() {
         Your browser does not support the video tag.
       </video>
 
-      <h1 style={{ fontWeight: "bold", zIndex: "1" }}>Welcome Multiplayer Game</h1><br />
+      <h1 style={{ fontWeight: "bold", zIndex: "1",marginTop:'10rem' ,color:'black'}}>INDIAN HERITAGE GAMES</h1><br />
 
       <div className="d-flex justify-content-center">
         <Card style={{ padding: "10px", zIndex: "1" }} className="resDiv">
           <CardBody>
             <CardTitle>
-              <h3 style={{ fontWeight: "bold" }}>Login/Signup</h3>
+              <h3 style={{ fontWeight: "bold" ,textAlign:"center" ,marginTop:"5rem",fontSize:'2rem',color:'black'}}>Login/Signup</h3>
             </CardTitle>
           </CardBody>
-          <CardBody>
+          <CardBody style={{textAlign:"center"}}>
             <GoogleLogin
+            style={{padding:'5rem'}}
                             clientId="871321053050-mkn67jcqu3dkt6be0pel1nj82boh97kp.apps.googleusercontent.com"
                             onSuccess={successRes}
               onFailure={failureRes}

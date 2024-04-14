@@ -16,14 +16,14 @@ const TopBar = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md" style={{backgroundColor:"white"}}>
+      <Navbar color="light" light expand="md" style={{backgroundColor:"rgb(13,71,161)"}}>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Alert color="success" className="my-auto">
+          <Alert color="success" style={{marginLeft:'75rem'}} >
             <PersonCircle />&nbsp;&nbsp;&nbsp; Welcome {localStorage.getItem("name")}
           </Alert>
 
-          <Button color="secondary" onClick={logout}>Logout</Button>
+          <Button className='btn' color="secondary" onClick={logout}>Logout</Button>
 
         </Collapse>
       </Navbar>
