@@ -73,3 +73,16 @@
   .round-btn:hover {
     background-color: var(--primary-light);
   }
+  .cardimage{
+    border-radius: 10px;
+    
+  }
+  .btn{
+    padding: 10px;
+    border-radius: 7px;
+  }
+  .cardtitle{
+    font-size: 25px;
+    color: #002171;
+    
+  }
