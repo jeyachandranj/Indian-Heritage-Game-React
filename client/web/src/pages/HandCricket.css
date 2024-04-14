@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: local('Roboto Bold'), 
+         local('Roboto-Bold'), 
+         url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) 
+         format('woff'),
+         url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.ttf) 
+         format('ttf'),
+         url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff2) 
+         format('woff2');
+}
+
+body{
+    font-family: 'Roboto' 'Comic Sans MS';
+    background-color: #0d0d30;
+    color: orange;
+}
+
+.p{
+    font-family: 'Roboto' 'Comic Sans MS';
+    font-size: 1.5em;
+    width: 33vw;
+    margin: 20px;
+    padding: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: blue;
+    color: blue;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.k{
+    font-family: 'Roboto' 'Comic Sans MS';
+    font-size: 1.5em;
+    display: inline-block;
+    width:100px;
+    height:100px;
+    margin:25px;
+    border-radius: 50px;
+    color: #0d0d30;
+    background-color: blue;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+.k:hover{
+    transition-duration: .5s;
+    color:white;
+    background-color: red;
+    border-radius: 50px;
+}
+
+#defend{
+    color: blue;
+    background-color: #0d0d30;
+    display: none;
+}
+
+#chase{
+    color: blue;
+    background-color: #0d0d30;
+    display: none;
+}
+
+.choice{
+    font-family: 'Roboto' 'Comic Sans MS';
+    font-size: 1.5em;
+    width: 33vw;
+    margin: 20px;
+    padding: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: blue;
+    color: blue;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#surface{
+    color: blue;
+}
+
+#gamePlay{
+    display: none;
+}
+
+.Coin{
+    font-family: 'Roboto' 'Comic Sans MS';
+    font-size: 1.3em;
+    display: inline-block;
+    width:100px;
+    height:100px;
+    margin:25px;
+    border-radius: 50px;
+    color: #0d0d30;
+    background-color: blue;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+.Coin:hover{
+    transition-duration: .5s;
+    color:white;
+    background-color: red;
+    border-radius: 50px;
+}
+
+#startgame{
+    display: none;
+}
+
+#startgamebowl{
+    display: none;
+}
+
+#startgamebat{
+    display: none;
+}
+
+.Coins{
+    font-family: 'Roboto' 'Comic Sans MS';
+    font-size: 1.3em;
+    display: inline-block;
+    width:100px;
+    height:100px;
+    margin:25px;
+    color: #0d0d30;
+    background-color: blue;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    display: inline-block;
+}
+.Coins:hover{
+    transition-duration: .5s;
+    color:white;
+    background-color: red;
+}
+
+#defendloss{
+    font-size: 1.3em;
+    display: none;
+}
+
+#defendwin{
+    font-size: 1.3em;
+    display: none;
+}
+
+#chasewin{
+    font-size: 1.3em;
+    display: none;
+}
+
+#chaseloss{
+    font-size: 1.3em;
+    display: none;
+}
+
+#tie{
+    font-size: 1.3em;
+    display: none;
+}
+
+#OUT{
+    font-size: 1.3em;
+    display: none;
+}
+
+#continue{
+    font-family: 'Roboto' 'Comic Sans MS';
+    font-size: 1.3em;
+    display: inline-block;
+    width:100px;
+    height:100px;
+    margin:25px;
+    color: #0d0d30;
+    background-color: blue;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    display: inline-block;
+}
+#continue:hover{
+    transition-duration: .5s;
+    color:white;
+    background-color: red;
+}
+
+.NG{
+    font-family: 'Roboto' 'Comic Sans MS';
+    font-size: 1.3em;
+    display: inline-block;
+    width:100px;
+    height:100px;
+    margin:25px;
+    color: #0d0d30;
+    background-color: blue;
+    border: none;
+    border-radius: 50px;
+    color: #0d0d30;
+    background-color: blue;
+    border: none;
+    border-radius: 150px;
+    outline: none;
+    display: inline-block;
+}
+.NG:hover{
+    transition-duration: .5s;
+    color:white;
+    background-color: red;
+}
+
+#head{
+    background: blue;
+    color: #11114c;
+    height: 50vh;
+    width: 100%;
+    clip-path: polygon(100% 0, 100% 79%, 0 100%, 0 100%, 0 0);
+    font-weight: 400;
+}
+h1{
+    display: inline-block;
+    margin-top: 15vh;
+}
+
+.message-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+}

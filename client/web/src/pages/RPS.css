@@ -1,0 +1,75 @@
+:root {
+    --primary: #0d47a1;
+    --primary-dark: #002171;
+    --primary-light: #5472d3;
+    --primary-text: #ffffff;
+  }
+  
+  html {
+    background-color: var(--primary);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+    background-color: var(--primary-dark);
+    color: var(--primary-text);
+    padding: 8px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: var(--primary-text);
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: center;
+  }
+  
+  .player {
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-text);
+    color: var(--primary-text);
+  }
+  
+  .score {
+    padding: 1px;
+    font-size: small;
+    font-weight: bold;
+    background-color: var(--primary-dark);
+  }
+  
+  .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: var(--primary);
+  }
+  
+  .round-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    background-color: var(--primary-dark);
+    color: var(--primary-text);
+  }
+  
+  .round-btn:hover {
+    background-color: var(--primary-light);
+  }

@@ -1,0 +1,38 @@
+.timer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Adjust the height as needed */
+}
+
+.timer {
+  position: relative;
+}
+
+.timer-svg {
+  width: 60px; /* Adjust the width as needed */
+  height: 60px; /* Adjust the height as needed */
+}
+
+.timer-circle-bg {
+  fill: none;
+  stroke: #ddd; /* Background color */
+  stroke-width: 5;
+}
+
+.timer-circle {
+  fill: none;
+  stroke: #ff5733; /* Fill color */
+  stroke-width: 8;
+  stroke-linecap: round;
+  /* No transform needed for this option */
+  transition: stroke-dasharray 0.1s;
+}
+
+.timer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}

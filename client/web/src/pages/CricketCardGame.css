@@ -1,0 +1,51 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust this according to your layout */
+  background-color: #001f3f;
+}
+
+@keyframes ultimateAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animated-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  animation: buttonAnimation 1s ease-in-out infinite;
+  margin-top: 500px;
+  margin-left: 30px;
+}
+
+.animated-button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+

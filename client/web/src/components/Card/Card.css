@@ -1,0 +1,172 @@
+.card-details {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.card-image {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.attributes-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.attribute {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.column {
+  width: calc(
+    50% - 5px
+  ); /* Each column takes up 50% of the container width with a small space between */
+  margin-right: 5px; /* Adjust as needed */
+}
+
+.attribute-button {
+  background-color: #78b4f5;
+  color: #0c0707;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.attribute-button.green {
+  background-color: #4fec5a;
+  color: #0c0707;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.attribute-button.red {
+  background-color: #ff6666;
+  color: #0c0707;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.attribute-button:hover {
+  background-color: #0056b3;
+}
+
+.attribute-button:disabled {
+  background-color: #007bff;
+}
+
+.attribute-button.green:disabled {
+  background-color: #4fec5a;
+}
+
+.attribute-button.red:disabled {
+  background-color: #ff6666;
+}
+
+.attribute-name {
+  font-weight: bold;
+}
+
+.attribute-value {
+  margin-left: 5px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+.round-results {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  display: flex;
+  align-items: center; /* Align vertically */
+  justify-content: center; /* Align horizontally */
+}
+
+/* Add this to your existing CSS */
+.next-round {
+  background-color: #f98d00;
+  color: #0c0707;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.next-round-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align vertically */
+  justify-content: center; /* Align horizontally */
+}
+.next-round:hover {
+  background-color: #e48f53;
+}
+
+.next-round:disabled {
+  background-color: #b6b1ae;
+}
+
+.card-image {
+  /* Set initial styles for the image */
+  width: 200px; /* Adjust width and height as needed */
+  height: 200px;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-image.loading {
+  /* Styles for the placeholder image (e.g., spinner) */
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="); /* Replace with your placeholder image URL or base64 code */
+  background-repeat: center;
+  background-size: 50px 50px; /* Adjust size of the spinner */
+  animation: spin 1s linear infinite;
+}
+
+.drawDeck {
+  background-color: #156ac4; /* Light blue */
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.drawDeck:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
