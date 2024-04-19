@@ -1,0 +1,31 @@
+.pit {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 8vw;
+    height: 18vw;
+    margin: .5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: brown;
+}
+
+/* .pit:hover {
+    background-color: chocolate;
+    cursor: pointer;
+} */
+
+@media (max-width: 720px) {
+    .borderbox{
+        display: flex;
+        justify-content: center;
+    }
+    .pit{
+      
+       width: 80%;
+       height: 4rem;
+    justify-self: center;
+    }
+}

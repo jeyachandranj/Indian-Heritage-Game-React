@@ -1,0 +1,41 @@
+.board {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 5vw;
+    background-color: rgb(247, 197, 91);
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.board section {
+    display: block;
+}
+
+.field {
+    display: inline-flex;
+    height: 100%;
+}
+
+@media (max-width: 720px) {
+    .board{
+        display: block;
+        
+        max-width: 450px;
+        align-items: center;
+
+    }
+   .board section {
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: space-around;
+   }
+    .field {
+        display: block;
+        flex-direction: column;
+    
+      
+        }
+    
+}

@@ -1,0 +1,449 @@
+.card-details {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .card-image {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card-name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .attributes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .attribute {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .column {
+    width: calc(
+      50% - 5px
+    ); /* Each column takes up 50% of the container width with a small space between */
+    margin-right: 5px; /* Adjust as needed */
+  }
+  
+  .attribute-button {
+    background-color: #78b4f5;
+    color: #0c0707;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .attribute-button.green {
+    background-color: #4fec5a;
+    color: #0c0707;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .attribute-button.red {
+    background-color: #ff6666;
+    color: #0c0707;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .attribute-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .attribute-button:disabled {
+    background-color: #007bff;
+  }
+  
+  .attribute-button.green:disabled {
+    background-color: #4fec5a;
+  }
+  
+  .attribute-button.red:disabled {
+    background-color: #ff6666;
+  }
+  
+  .attribute-name {
+    font-weight: bold;
+  }
+  
+  .attribute-value {
+    margin-left: 5px;
+  }
+  
+  .board {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  }
+  
+  .round-results {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+  }
+  
+  /* Add this to your existing CSS */
+  .next-round {
+    background-color: #f98d00;
+    color: #0c0707;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
+  .next-round-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+  }
+  .next-round:hover {
+    background-color: #e48f53;
+  }
+  
+  .next-round:disabled {
+    background-color: #b6b1ae;
+  }
+  
+  .card-image {
+    /* Set initial styles for the image */
+    width: 200px; /* Adjust width and height as needed */
+    height: 200px;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .card-image.loading {
+    /* Styles for the placeholder image (e.g., spinner) */
+    background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="); /* Replace with your placeholder image URL or base64 code */
+    background-repeat: center;
+    background-size: 50px 50px; /* Adjust size of the spinner */
+    animation: spin 1s linear infinite;
+  }
+  
+  .drawDeck {
+    background-color: #156ac4; /* Light blue */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
+  .drawDeck:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  /* Home.css */
+
+/* Keyframes animation */
+@keyframes wonderAnimation {
+    0% {
+      transform: translateY(-50px) scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0) scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-20px) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Styles for the .home class */
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height to fill the entire viewport */
+    width: 1500px;
+    background-color: #001f3f; /* Dark blue background color */
+  }
+  
+  /* Styles for the .box-layout class */
+  .box-layout {
+    background-color: #f8f9fa; /* Background color for the box layout */
+    padding: 20px; /* Padding around the form container */
+    border-radius: 10px; /* Add border radius for a rounded look */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  }
+  
+  /* Styles for the .form-container class */
+  .form-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styles for the .form-row class */
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the .input-label class */
+  .input-label {
+    width: 180px; /* Adjust label width as needed */
+    margin-right: 10px;
+  }
+  
+  /* Styles for the .input-field and .select-field classes */
+  .input-field,
+  .select-field {
+    flex: 1; /* Fill remaining space */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Styles for the .select-field class */
+  .select-field {
+    border: 1px solid #ced4da; /* Add border to the select field */
+  }
+  
+  .select-field:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  /* Styles for the .submit-button class */
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%; /* Make buttons take up full width */
+  }
+  
+  .submit-button:not(:last-child) {
+    margin-bottom: 10px; /* Add margin between buttons */
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-button.disabled {
+    background-color: #ddd; /* Disabled background color */
+    color: #666; /* Text color for disabled state */
+    cursor: not-allowed; /* Cursor style for disabled state */
+  }
+  
+  /* Apply the animation to an element */
+  .animated-element {
+    animation: wonderAnimation 1.5s ease-in-out infinite alternate; /* Use the wonderAnimation with 1.5 second duration, ease-in-out timing function, infinite looping, and alternate direction */
+  }
+
+
+  /* Lobby.css */
+
+.lobby-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 1500px;
+    background-color: #001f3f; /* Dark blue background color */
+  }
+  
+  .lobby-content {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wait-message {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .room-code-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .room-code-container p {
+    margin-right: 10px;
+  }
+  
+  .room-code-container p.copied-room-code {
+    color: green;
+    font-weight: normal;
+  }
+  
+  .copy-button {
+    background-color: #78b4f5;
+    color: #0c0707;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .copy-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loading-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #f98d00;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+  }
+  
+  .start-button {
+    background-color: #f98d00;
+    color: #0c0707;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .start-button:hover {
+    background-color: #e48f53;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .next-round {
+    background-color: #f98d00;
+    color: #0c0707;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
+  .next-round-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+  }
+  .next-round:hover {
+    background-color: #e48f53;
+  }
+  
+  .next-round:disabled {
+    background-color: #b6b1ae;
+  }
+
+  .result-container {
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .score {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333333;
+  }
+  
+  .game-result {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555555;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    background-color: #78b4f5;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  

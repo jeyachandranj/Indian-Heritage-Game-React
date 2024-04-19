@@ -1,5 +1,16 @@
 import React from 'react';
 import './HandCricket.css';
+import { PersonCircle } from 'react-bootstrap-icons'
+import ones from '../assets/one.jpg'
+import two from '../assets/two.jpg'
+import three from '../assets/three.jpg'
+import four from '../assets/four.jpg'
+import five from '../assets/five.jpg'
+import six from '../assets/six.jpg'
+import head from '../assets/head.jpg'
+import tail from '../assets/tail.jpg'
+import bat from '../assets/bat.jpg'
+import bowl from '../assets/bowl.jpg'
 
 export default class HandCricket extends React.Component
 {
@@ -282,18 +293,18 @@ export default class HandCricket extends React.Component
         const {player,comp,fb,finish}=this.state;
         return(
             <div id="surface">
-                <div id="head"><h1>Hand Cricket</h1></div>
+                <div id="head"><h2 className='title'>Hand Cricket</h2></div>
                 <div id="toss">
                 <h2>Let's Play</h2>
                 <br></br>
-                <button className="Coins" onClick={()=>this.toss(0)}>H</button>
-                <button className="Coins" onClick={()=>this.toss(1)}>T</button>
+                <img src={head} className="Coins" onClick={()=>this.toss(0)}/>
+                <img src={tail} className="Coins" onClick={()=>this.toss(1)}/>
                 </div>
                 <div id="startgame">
                 <h2>YOU HAVE WON THE TOSS</h2>
                 <br></br>
-                <button className="Coin" onClick={()=>this.bob(0)}>Bat</button>
-                <button className="Coin" onClick={()=>this.bob(1)}>Bowl</button>
+                <img src={bat} className="Coin" onClick={()=>this.bob(0)}/>
+                <img src={bowl} className="Coin" onClick={()=>this.bob(1)}/>
                 </div>
                 <div id="startgamebat">
                 <br></br>
@@ -307,11 +318,10 @@ export default class HandCricket extends React.Component
                 <br></br>
                 <button className="Coin" onClick={()=>this.bob(0)}>GO</button>
                 </div>
-                <div id="gamePlay">
-                <br></br>
-                <div className="p">YOU<br></br><br></br>{player[0]}</div>
-                <div className="p">COMPUTER<br></br><br></br>{comp[0]}</div>
-                <br></br>
+                <div id="gamePlay">                
+                <div className="p">                <PersonCircle className='profile' />&nbsp;&nbsp;&nbsp;  {localStorage.getItem("name")}
+<br></br><br></br>{player[0]}</div>
+                <div className="p">COMPUTER<br></br><br></br>{comp[0]}</div>                <br></br>
                 <br></br>
                 <br></br>
                 <div id="status">Status : </div>
@@ -319,16 +329,16 @@ export default class HandCricket extends React.Component
                 <div id="defend"><br></br>COMPUTER NEEDS {player[0]-comp[0]+1} RUNS TO WIN<br></br><br></br></div>
                 <div id="chase"><br></br>YOU NEED {comp[0]-player[0]+1} RUNS TO WIN<br></br><br></br></div>
                 <br></br>
-                <button className="k" onClick={()=>this.chose(1)}>1</button>
-                <button className="k" onClick={()=>this.chose(2)}>2</button>
-                <button className="k" onClick={()=>this.chose(3)}>3</button>
-                <button className="k" onClick={()=>this.chose(4)}>4</button>
-                <button className="k" onClick={()=>this.chose(5)}>5</button>
-                <button className="k" onClick={()=>this.chose(6)}>6</button>
+                <img src={ones} className='k'  onClick={()=>this.chose(1)}/>
+                <img src={two} className="k" onClick={()=>this.chose(2)}/>
+                <img src={three} className="k" onClick={()=>this.chose(3)}/>
+                <img src={four} className="k" onClick={()=>this.chose(4)}/>
+                <img src={five} className="k" onClick={()=>this.chose(5)}/>
+                <img src={six} className="k" onClick={()=>this.chose(6)}/>
                 <br></br>
                 <br></br>
-                <div className="choice">YOU HAVE CHOSE<br></br><br></br><div id="a">0</div></div>
-                <div className="choice">COMPUTER HAS CHOSE<br></br><br></br><div id="b">0</div></div>
+                <div className="choice">YOU HAVE CHOOSE<br></br><br></br><div id="a">0</div></div>
+                <div className="choice">COMPUTER HAS CHOOSE<br></br><br></br><div id="b">0</div></div>
                 </div>
                 <div id="defendwin">
                 <br></br>

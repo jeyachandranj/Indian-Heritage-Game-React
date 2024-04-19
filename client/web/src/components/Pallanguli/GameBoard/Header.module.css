@@ -1,0 +1,31 @@
+.header {
+    color: white;
+    display: inline;  
+    text-align: center;
+    justify-content:  space-around;
+    width: 100vw;
+}
+
+.header button {
+    font-weight: bold;
+    color: rgb(104, 34, 34);
+    height: 2rem;
+    width: auto;
+    background-color: rgb(238, 145, 79);
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: .5rem;
+    margin: 10px;
+}
+
+.header button:hover {
+    cursor: pointer;
+    background-color: chocolate;
+}
+
+@media (max-width: 720px) {
+    .header{
+        display: flex;
+    }
+
+}

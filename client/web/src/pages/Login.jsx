@@ -54,9 +54,9 @@ export default function Login() {
 
   return (
     <div style={gradient}>
-      <video autoPlay loop muted style={videoStyle} >
+       <video autoPlay loop muted style={videoStyle} >
         <source src={BgVideo} type="video/mp4" />
-      </video>
+      </video> 
        <audio autoPlay loop style={{ display: 'none' }}>
         <source src={Audio} type="audio/mp3" />
       </audio> 

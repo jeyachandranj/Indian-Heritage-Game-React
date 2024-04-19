@@ -1,0 +1,36 @@
+.pit {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 8vw;
+    min-height: 8vw;
+    margin: .5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: brown;
+    background-color: rgb(238, 145, 79);
+}
+
+.pit:hover {
+    background-color: chocolate;
+    cursor: pointer;
+}
+
+.pit:disabled {
+    background-color: rgb(219, 165, 126);
+}
+.pit:disabled:hover {
+    cursor:default;
+}
+
+@media (max-width: 720px) {
+    .pit{
+        width: 10vh;
+        height: 10vh;
+       max-width: 400px;
+       margin: 2px;
+    justify-self: center;
+    }
+}

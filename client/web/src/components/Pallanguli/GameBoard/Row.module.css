@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 720px) {
+    .row{
+        display: flex;
+        /* flex-wrap: row-wrap; */
+        flex-direction: column;
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
+}

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { io } from "socket.io-client";
-import { Card } from "../components/Card/Card";
-import { Result } from "../components/Result/Result";
-import { Home } from "../components/Home/Home";
-import { Lobby } from "../components/Lobby/Lobby";
+import { Card } from "../components/CricketCard/Card";
+import { Result } from "../components/CricketCard/Result";
+import { Home } from "../components/CricketCard/Home";
+import { Lobby } from "../components/CricketCard/Lobby";
 import { useNavigate } from 'react-router-dom';
 import "./CricketCardGame.css";
 let socket;
@@ -32,10 +32,7 @@ function CricketCardGame() {
   }, []);
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    // Navigate to /chat page
-    navigate('/chat');
-  };
+
 
 
 
