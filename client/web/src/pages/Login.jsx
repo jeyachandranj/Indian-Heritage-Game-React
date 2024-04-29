@@ -77,7 +77,8 @@ export default function Login() {
           </CardBody>
           <CardBody >
             <GoogleLogin
-              clientId="871321053050-mkn67jcqu3dkt6be0pel1nj82boh97kp.apps.googleusercontent.com"
+               clientId="871321053050-mkn67jcqu3dkt6be0pel1nj82boh97kp.apps.googleusercontent.com"
+              //clientId="346581180770-60fabpkido06nalsfr5ulmgft7jjrh6r.apps.googleusercontent.com"
               onSuccess={successRes}
               onFailure={failureRes}
               redirectUri="/game"

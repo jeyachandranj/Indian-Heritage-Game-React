@@ -9,9 +9,7 @@
     border-radius: 15px;
 }
 
-.board section {
-    display: block;
-}
+
 
 .field {
     display: inline-flex;
@@ -20,7 +18,6 @@
 
 @media (max-width: 720px) {
     .board{
-        display: block;
         
         max-width: 450px;
         align-items: center;
@@ -32,10 +29,27 @@
        justify-content: space-around;
    }
     .field {
-        display: block;
         flex-direction: column;
     
       
         }
     
 }
+
+.game-over button {
+    font-weight: bold;
+    color: rgb(104, 34, 34);
+    height: 2rem;
+    width: auto;
+    background-color: rgb(238, 145, 79);
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: .5rem;
+    margin: 10px;
+}
+
+.game-over button:hover {
+    cursor: pointer;
+    background-color: chocolate;
+}
+

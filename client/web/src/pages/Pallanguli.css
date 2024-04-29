@@ -1,15 +1,10 @@
-* {
-    box-sizing: border-box;
-  }
+
   
   html {
     font-family: 'Noto Sans JP', sans-serif;
   }
   
-  body {
-    margin: 0;
-    background-color: #3f3f3f;
-  }
+  
   
   #modal-root {
     display: flex;

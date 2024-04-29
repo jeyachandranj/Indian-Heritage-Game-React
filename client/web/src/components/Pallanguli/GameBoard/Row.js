@@ -1,5 +1,5 @@
 import React, { useContext} from 'react';
-import GameContext from '../../Store/game-context';
+import GameContext from '../Store/game-context';
 import Pit from './Pit';
 import styles from './Row.module.css';
 

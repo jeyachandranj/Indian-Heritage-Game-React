@@ -240,3 +240,16 @@ h1{
 .profile{
     float: left;
 }
+
+@media only screen and (max-width: 768px) {
+    .p {
+        width: 90vw;
+        font-size: 1.2em;
+    }
+
+    .k {
+        width: 70px;
+        height: 70px;
+        margin: 15px;
+    }
+}

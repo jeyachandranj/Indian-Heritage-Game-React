@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import GameContext from "../../Store/game-context";
+import GameContext from "../Store/game-context";
 import styles from './Header.module.css';
 
 const Header = () => {

@@ -225,12 +225,12 @@ const Body = () => {
           />
           <CardBody style={{ marginTop: "10px" }}>
             <CardTitle className="cardtitle" tag="h5">
-              Raja Rani
+              Rummy
             </CardTitle>
             <Button className="btn" color="secondary" onClick={() => setShowPopup(!showPopup)}>
               Rule
             </Button>
-            <Link to="/image/1">
+            <Link to={`http://localhost:3002?name=${localStorage.getItem("name")}`}>
               <Button className="btn" style={{ marginLeft: "10px" }}>
                 Play
               </Button>
@@ -503,12 +503,12 @@ const Body = () => {
           />
           <CardBody style={{ marginTop: "10px" }}>
             <CardTitle className="cardtitle" tag="h5">
-              Moksha Patamu
+              Snake and Ladder
             </CardTitle>
             <Button className="btn" color="secondary">
               Rule
             </Button>
-            <Link to="/image/1">
+            <Link to="/image/5">
               <Button className="btn" style={{ marginLeft: "10px" }}>
                 Play
               </Button>

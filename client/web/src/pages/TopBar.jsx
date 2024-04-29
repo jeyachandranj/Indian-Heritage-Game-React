@@ -23,7 +23,6 @@ const TopBar = (props) => {
             <PersonCircle />&nbsp;&nbsp;&nbsp; Welcome {localStorage.getItem("name")}
           </Alert>
           <Button className='btn' color="secondary" onClick={logout}>Logout</Button>
-
         </Collapse>
       </Navbar>
     </div>
