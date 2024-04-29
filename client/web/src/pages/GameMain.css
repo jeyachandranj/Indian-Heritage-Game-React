@@ -1,0 +1,14 @@
+.gametitle{
+    color: black;
+    width: auto;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: 35rem;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+

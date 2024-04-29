@@ -17,7 +17,7 @@ const TopBar = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md" style={{backgroundColor:"rgb(13,71,161)"}}>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle} style={{marginTop:"2rem"}} />
         <Collapse isOpen={isOpen} navbar>
           <Alert color="success" style={{marginLeft:'75rem'}} >
             <PersonCircle />&nbsp;&nbsp;&nbsp; Welcome {localStorage.getItem("name")}
