@@ -36,7 +36,7 @@ const Body = () => {
           />
           <CardBody style={{ marginTop: "10px" }}>
             <CardTitle className="cardtitle" tag="h5">
-              Cricket Cards
+            King Trump Cards
             </CardTitle>
             <Button
               className="btn"
@@ -130,15 +130,16 @@ const Body = () => {
             src="WW.jpg"
             alt="Card image cap"
           />
+          
           <CardBody style={{ marginTop: "10px" }}>
             <CardTitle className="cardtitle" tag="h5">
-              WWE Cards
+              Puzzle
             </CardTitle>
             <Button className="btn" color="secondary" onClick={() => setShowPopup(!showPopup)}
 >
               Rule
             </Button>
-            <Link to="/image/1">
+            <Link to="http://localhost:5173/">
               <Button className="btn" style={{ marginLeft: "10px" }}>
                 Play
               </Button>
@@ -225,12 +226,12 @@ const Body = () => {
           />
           <CardBody style={{ marginTop: "10px" }}>
             <CardTitle className="cardtitle" tag="h5">
-              Rummy
+              Chaupar
             </CardTitle>
             <Button className="btn" color="secondary" onClick={() => setShowPopup(!showPopup)}>
               Rule
             </Button>
-            <Link to={`http://localhost:3002?name=${localStorage.getItem("name")}`}>
+            <Link to={`http://localhost:3002`}>
               <Button className="btn" style={{ marginLeft: "10px" }}>
                 Play
               </Button>
@@ -411,12 +412,12 @@ const Body = () => {
           />
           <CardBody style={{ marginTop: "10px" }}>
             <CardTitle className="cardtitle" tag="h5">
-              Rock Paper Scissors
+              Treasure Hunt
             </CardTitle>
             <Button className="btn" color="secondary">
               Rule
             </Button>
-            <Link to="/image/3">
+            <Link to="http://localhost:3001">
               <Button className="btn" style={{ marginLeft: "10px" }}>
                 Play
               </Button>
@@ -503,7 +504,7 @@ const Body = () => {
           />
           <CardBody style={{ marginTop: "10px" }}>
             <CardTitle className="cardtitle" tag="h5">
-              Snake and Ladder
+              Paramapatham
             </CardTitle>
             <Button className="btn" color="secondary">
               Rule
@@ -702,6 +703,7 @@ const Body = () => {
           )}
         </Card>
       </div>
+      
     </div>
   );
 };

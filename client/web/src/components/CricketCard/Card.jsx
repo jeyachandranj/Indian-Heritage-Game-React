@@ -41,7 +41,7 @@ export const Card = ({
 }) => {
   console.log(data);
 
-  const { Image, Name, Attributes } = data;
+  const { imageLink, Prince, Attributes } = data;
   const [isLoading, setIsLoading] = useState(true);
   const defaultImage =
     "https://scores.iplt20.com/ipl/images/default-player-statsImage.png";
@@ -54,8 +54,8 @@ export const Card = ({
   return (
     <section className="card-details">
       <img
-        src={Image}
-        alt={Name}
+        src={imageLink}
+        alt={Prince}
         className={`card-image ${isLoading ? "loading" : ""}`}
         onLoad={() => setIsLoading(false)}
         onError={(e) => {
@@ -63,7 +63,7 @@ export const Card = ({
           e.onError = null;
         }}
       />
-      <h3 className="card-name">{Name}</h3>
+      <h3 className="card-name">{Prince}</h3>
       <div className="attributes-container">
         <div className="column">
           {firstColumnAttributes.map((attribute) => (

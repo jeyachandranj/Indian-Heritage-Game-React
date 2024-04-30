@@ -3,7 +3,7 @@
     height: 100%;
     width: 90%;
     margin: 5vw;
-    background-color: rgb(247, 197, 91);
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/584/977/non_2x/beautiful-wood-background-with-text-space-free-vector.jpg");
     justify-content: space-around;
     padding: 1rem;
     border-radius: 15px;
@@ -21,6 +21,7 @@
         
         max-width: 450px;
         align-items: center;
+
 
     }
    .board section {
@@ -43,7 +44,7 @@
     width: auto;
     background-color: rgb(238, 145, 79);
     border-radius: 15px;
-    border: 1px solid black;
+    border: 5px solid black;
     padding: .5rem;
     margin: 10px;
 }

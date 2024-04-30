@@ -1,6 +1,4 @@
 .stone {
-  /* max-width: 45%;
-  max-height: 45%; */
   border: 1px solid black;
   background-color: brown;
   border-radius: 35px;
@@ -8,7 +6,6 @@
   width: 1.5vw;
   height: 1.5vw ;
   margin: 2px;
-
 animation: bump 600ms ease-out;
 }
 

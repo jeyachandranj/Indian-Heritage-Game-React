@@ -32,13 +32,7 @@ function Board() {
 
   return (
     <div className={styles.board}>
-      {/* {gameCtx.gameOver && (
-        <GameOverModal
-          onNewGame={gameCtx.newGame}
-          player1score={gameCtx.homePit1}
-          player2score={gameCtx.homePit2}
-        />
-      )} */}
+      
       {gameCtx.gameOver && (
         <div className="popup-overlay" style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.5)", zIndex: 999, display: "flex", justifyContent: "center", alignItems: "center" }}>
           <div className="popup-content" style={{ width: "700px", maxHeight: "80%", overflowY: "auto", backgroundColor: "white", borderRadius: "10px", padding: "20px", boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.5)", position: "relative" }}>
