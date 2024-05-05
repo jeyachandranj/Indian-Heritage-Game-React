@@ -702,6 +702,7 @@ const Body = () => {
             </div>
           )}
         </Card>
+        <Link to="http://localhost:5174/" ><button type="btn" style={{"width":"100px","height":"100px",backgroundColor:"lightblue"}} >Chat Bot</button></Link>
       </div>
       
     </div>
