@@ -7,7 +7,6 @@ import GameMain from "./pages/GameMain";
 import Board from "./pages/Pallanguli";
 import Snake from "./pages/Snake";
 import RPS from "./pages/RPS";
-import Question from "./pages/Question";
 export default function App() {
   const isLoggedIn = localStorage.getItem("loggedIn") === "true";
   console.log("log",isLoggedIn);
@@ -22,7 +21,6 @@ export default function App() {
         <Route path="/image/3" element={<RPS />} />
         <Route path="/image/4" element={<Board />} />
         <Route path="/image/5" element={<Snake />} />
-        <Route path="/quiz" element={<Question />} />
       </Routes>
     </BrowserRouter>
   );

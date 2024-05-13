@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "29b0345a6ed5b8669c56",
-    "url": "/CHAT-GENIUS-2/static/css/main.8970b637.chunk.css"
+    "revision": "06ca9e09d02d6d491124",
+    "url": "/CHAT-GENIUS-2/static/css/main.d60c55b8.chunk.css"
   },
   {
-    "revision": "29b0345a6ed5b8669c56",
-    "url": "/CHAT-GENIUS-2/static/js/main.bc72be56.chunk.js"
+    "revision": "06ca9e09d02d6d491124",
+    "url": "/CHAT-GENIUS-2/static/js/main.be1289da.chunk.js"
   },
   {
     "revision": "e45921e8a0f0fcf351b7",
     "url": "/CHAT-GENIUS-2/static/js/runtime~main.c588a33b.js"
   },
   {
-    "revision": "a096fbd15989ed3d90c4",
-    "url": "/CHAT-GENIUS-2/static/css/2.792a44ec.chunk.css"
+    "revision": "21c05bedce90351c9625",
+    "url": "/CHAT-GENIUS-2/static/css/2.63b866ab.chunk.css"
   },
   {
-    "revision": "a096fbd15989ed3d90c4",
-    "url": "/CHAT-GENIUS-2/static/js/2.d4a4d01b.chunk.js"
+    "revision": "21c05bedce90351c9625",
+    "url": "/CHAT-GENIUS-2/static/js/2.eb634400.chunk.js"
   },
   {
     "revision": "f9527a926303064b151e5f7430642b0a",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/CHAT-GENIUS-2/static/media/board.78b99070.png"
   },
   {
-    "revision": "dcf82cd3ac2f3437205018dcff77ad53",
+    "revision": "fa66202e46dcd8f4daaada4132a19651",
     "url": "/CHAT-GENIUS-2/index.html"
   }
 ];
