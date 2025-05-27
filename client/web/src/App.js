@@ -6,7 +6,7 @@ import CricketCardGame from "./pages/CricketCardGame";
 import GameMain from "./pages/GameMain";
 import Board from "./pages/Pallanguli";
 import Snake from "./pages/Snake";
-import RPS from "./pages/RPS";
+
 export default function App() {
   const isLoggedIn = localStorage.getItem("loggedIn") === "true";
   console.log("log",isLoggedIn);
@@ -18,7 +18,6 @@ export default function App() {
         <Route path="/game" element={isLoggedIn ? <GameMain /> : <Navigate to="/" />} />
         <Route path="/image/1" element={<CricketCardGame />} />
         <Route path="/image/2" element={<HandCricket />} />
-        <Route path="/image/3" element={<RPS />} />
         <Route path="/image/4" element={<Board />} />
         <Route path="/image/5" element={<Snake />} />
       </Routes>

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/CHAT-GENIUS-2/precache-manifest.a987d0542ed9062231f0f163f788b98e.js"
+  "/CHAT-GENIUS-2/precache-manifest.96bd9f47aff5c89e208857fb266985ae.js"
 );
 
 workbox.clientsClaim();
